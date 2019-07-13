@@ -2,24 +2,26 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Collider2D))]
 public class Agent : MonoBehaviour
 {
-    private bool isDead;
+    private Collider2D agentCollider;
+    public Collider2D AgentCollider
+    {
+        get
+        {
+            return agentCollider;
+        }
+    }
 
     private void Awake()
     {
-        isDead = false;
+        agentCollider = GetComponent<Collider2D>();
     }
 
-    // Start is called before the first frame update
-    void Start()
+    public void Move(Vector2 direction)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        transform.up = direction;
+        transform.position += (Vector3)direction * Time.deltaTime;
     }
 }

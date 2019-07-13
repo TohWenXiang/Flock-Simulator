@@ -336,9 +336,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 791e78445ac99a54ca379df934a32f79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numberOfFlockToSpawn: 10
-  minimumAgentCountPerFlock: 5
-  maximumAgentCountPerFlock: 10
+  numberOfFlockToSpawn: 1
+  minimumAgentCountPerFlock: 10
+  maximumAgentCountPerFlock: 50
 --- !u!1 &1851649700
 GameObject:
   m_ObjectHideFlags: 0

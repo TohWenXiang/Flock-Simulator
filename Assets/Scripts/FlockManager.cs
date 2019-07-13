@@ -41,7 +41,7 @@ public class FlockManager : MonoBehaviour
         newFlock = Instantiate(flockPrefab, pos, Quaternion.identity, populationContainer);
 
         //define its flock size
-        newFlock.flockSize = flockSize;
+        newFlock.FlockSize = flockSize;
 
         //add flock to the list of flock that flock manager is tracking
         flockList.Add(newFlock);

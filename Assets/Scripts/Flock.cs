@@ -4,9 +4,17 @@ using UnityEngine;
 
 public class Flock : MonoBehaviour
 {
-    public int flockSize;
+    public int spawnRange;
 
     private List<Agent> agentsInFlock;
+    private int flockSize;
+    public int FlockSize
+    {
+        set
+        {
+            flockSize = value;
+        }
+    }
 
     private void Awake()
     {
